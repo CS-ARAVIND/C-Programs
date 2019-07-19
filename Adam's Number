@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+int reverse(int n)
+{
+    int rem,result=0;
+    while(n!=0)
+    {
+        rem=n%10;
+        result=result*10+rem;
+        n=n/10;
+    }
+    return result;
+}
+int square_root(int n)
+{
+    int k1=sqrt(n);
+    return k1;
+}
+int main()
+{
+    int k,s, reversed_number,result,sq;
+    scanf("%d",&k);
+    sq=k*k;
+    reversed_number=reverse(sq);
+    s=square_root(reversed_number);
+    result=reverse(s);
+    if(result==k)
+    {
+        printf("It is Adam's Number");
+    }
+    else
+    {
+        printf("Sorry try again it is not adams number");
+    }
+}
