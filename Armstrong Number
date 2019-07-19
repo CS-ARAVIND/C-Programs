@@ -1,8 +1,10 @@
+
+    
 #include <stdio.h>
 #include<math.h>
 int main()
 {
-    int temp,temp1,result,rem,count=0,n;
+    int temp,temp1,result=0,rem,count=0,n;
     scanf("%d",&n);
     temp=temp1=n;
     while(temp!=0)
@@ -27,3 +29,4 @@ int main()
     
     return 0;
 }
+
