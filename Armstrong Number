@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int temp,temp1,result,rem,count=0,n;
+    scanf("%d",&n);
+    temp=temp1=n;
+    while(temp!=0)
+    {
+        temp=temp/10;
+        count++;
+    }
+    while(temp1)
+    {
+        rem=temp1%10;
+        result=result+pow(rem,count);
+        temp1=temp1/10;
+    }
+    if(result==n)
+    {
+        printf("It is an armstrong number");
+    }
+    else
+    {
+        printf("Not an armstrong number");
+    }
+    
+    return 0;
+}
